@@ -1,0 +1,36 @@
+h2{
+    text-align: center;
+}
+ input{
+    
+    height: 39px;
+    width: 400px;
+    
+    border-radius: 12px;
+    padding-left: 5px;
+}
+select{
+    margin-top: 20px;
+    height: 39px;
+    width: 410px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.table{
+     padding-bottom: 155px;
+    padding-top: 90px; 
+    
+   
+}
+.box{
+    background-color: rgba(1, 26, 18, 0.166);
+    text-align: center;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+button{
+    margin-bottom: 20px;
+}

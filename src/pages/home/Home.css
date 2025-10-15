@@ -1,0 +1,23 @@
+.home{
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    height: 655px;
+    
+}
+.home1 h1{
+    padding-left: 550px;
+    padding-top: 150px;
+    color: rgba(50, 66, 174, 0.733);
+}
+.home1 p{
+    padding-left: 400px;
+    padding-top: 25px;
+    font-size: 26px;
+    color: rgba(46, 75, 208, 0.664);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+     font-family: Arial, sans-serif;
+}

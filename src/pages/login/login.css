@@ -1,0 +1,35 @@
+.login{
+    text-align: center;
+    height: 230px;
+    
+    padding-bottom: 425px;
+    background-repeat: no-repeat;
+}
+.login button{
+    border-radius: 100px;
+    background-color: rgb(79, 178, 245);
+    height: 30px;
+    width: 70px;
+    margin-top: 10px;
+}
+.login button:hover{
+    background-color: aquamarine;
+
+}
+.login input{
+    width: 400px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-top: 50px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+     font-family: Arial, sans-serif;
+     
+}
+h2{
+    padding-top: 20px;
+}

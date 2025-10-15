@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+     font-family: Arial, sans-serif;
+     
+}
+p{
+    font-size: 30px;
+    margin-top: 40px;
+    color: rgb(97, 188, 241);
+    
+}
+.abt{
+    background-color: rgba(39, 37, 37, 0.916);
+    padding-top: 20px;
+    padding-bottom: 70px;
+}

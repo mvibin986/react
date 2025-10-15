@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0px;
+     font-family: Arial, sans-serif;
+}
+
+.head{
+    padding: 25px;
+    color: rgb(206, 128, 19);
+    background-color: rgba(0, 0, 0, 0.478);
+    text-align: center;
+}
+.head a{
+    text-decoration: none;
+    padding-left: 100px;
+    padding-right: 50px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.989);
+     cursor: pointer;
+}
