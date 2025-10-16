@@ -5,12 +5,12 @@ export default function Header() {
   return (
     <div>
     <header className="head">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/destination">Destination</Link>
-        <Link to="/login">Login</Link>
-        <Link to="/booking">Booking</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/"><button>Home</button></Link>
+        <Link to="/about"><button>About</button></Link>
+        <Link to="/destination"><button>Places</button></Link>
+        <Link to="/login"><button>Login</button></Link>
+        <Link to="/booking"><button>Booking</button></Link>
+        <Link to="/contact"><button>Contact</button></Link>
          
     </header>
     </div>

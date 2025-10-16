@@ -1,17 +1,18 @@
 *{
     margin: 0px;
     padding: 0px;
-     font-family: Arial, sans-serif;
-     
+      font-family: Arial, sans-serif;
 }
 p{
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 40px;
-    color: rgb(97, 188, 241);
-    
+    color: black;
+    margin-top: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 .abt{
-    background-color: rgba(39, 37, 37, 0.916);
+    background-color: white;
     padding-top: 20px;
     padding-bottom: 70px;
 }

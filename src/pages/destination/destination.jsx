@@ -1,4 +1,6 @@
 import React, {useState} from 'react'
+
+
 import Destinaationcard  from './destinationcard/Destinaationcard'
 import bali from "../../image/bali.jpg"
 import thai from "../../image/thai.jpg"
@@ -6,23 +8,46 @@ import viet from "../../image/veit.jpg"
 import goa from "../../image/goa.jpg"
 import swi from "../../image/swi.jpg"
 import tok from "../../image/tok.jpg"
+import './destination.css'
 export default function Destination() {
    
+const [search, setSearch]=useState("")
+
+const datas=[
+{img:tok,name:"tokiyo",days:"7 Days",amount:"$90000"},
+{img:thai,name:"thailand",days:"7 Days",amount:"$90000"},
+{img:bali,name:"bali",days:"7 Days",amount:"$90000"},
+{img:goa,name:"goa",days:"7 Days",amount:"$90000"},
+{img:viet,name:"veitnam",days:"7 Days",amount:"$90000"},
+{img:swi,name:"switzerland",days:"7 Days",amount:"$90000"},
+]
+
+const filterdDatas=datas.filter(
+  (data)=>data.name.toLowerCase().includes(search.toLowerCase().trim())
+  
+
+)
 
 
   return (
     <div>
-    
+        <input type="text"
+       placeholder='🔍 search by name'
+       value={search}
+       onChange={(data)=>setSearch(data.target.value)} />
       
         <div className="container">
-        <Destinaationcard img={tok} name="tokiyo" days="7days"  amount="$70,000"
-        />
-        <Destinaationcard img={bali} name="bali" days="4days" amount="$30,000"/>
-        <Destinaationcard img={thai} name="thailand" days="4days"  amount="$60,000"/>
-        <Destinaationcard img={viet} name="vietnam" days="6days"  amount="$50,000"/>
-        <Destinaationcard img={goa} name="goa" days="5days"  amount="$25,000"/>
-        <Destinaationcard img={swi} name="Switzerland" days="7days"  amount="$90,000"/>
-    </div> 
+             {filterdDatas.map((data)=>(
+            <Destinaationcard
+              
+              img={data.img}
+              name={data.name}
+              days={data.days}
+              amount={data.amount}
+            />
+            
+            ))}
+        </div>  
     </div>
   )
 }

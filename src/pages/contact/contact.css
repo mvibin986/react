@@ -1,0 +1,16 @@
+*{
+    margin: 0px;
+    padding: 0px;
+     font-family: Arial, sans-serif;
+}
+p{
+    text-align: center;
+    color: rgba(10, 107, 243, 0.682);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.con{
+    margin: 10px;
+}

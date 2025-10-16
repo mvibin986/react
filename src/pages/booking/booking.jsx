@@ -5,14 +5,14 @@ export default function Booking() {
   return (
    <div className='table' >
     
-    <div className='box'><h2>Booking</h2>
+    <h2>Booking</h2>
     
-    <div><input type="text" placeholder='Name' /></div>
+   <input className='bt' type="text" placeholder='Name' />
     
-    <div><input type="text" placeholder='Number of adults and children' /></div>
-    <div><input type="text" placeholder='Description' /></div>
-    <h1>From - To date</h1><input type="text" placeholder='DD-MM-YY to DD-MM-YY' />
-          
+    <input className='bt' type="text" placeholder='Number of adults and children' />
+    <input className='bt' type="text" placeholder='Description' />
+    <h1 className='h1'>From - To date</h1><input className='bt' type="text" placeholder='DD-MM-YY to DD-MM-YY' />
+       <h1 className='h1'>Select Place</h1>   
     <div><select placeholder="Select your destination">
           <option>tokiyo</option>
           <option>bali</option>
@@ -23,8 +23,8 @@ export default function Booking() {
           
           
         </select></div>
-        <button>Book Now</button>
-        </div>
+        <button className='bn'>Book Now</button>
+        
    </div>
   )
 }

@@ -3,6 +3,7 @@ import React from 'react'
 
 
 
+
 export default function Destinaationcard(props) {
    
         
@@ -16,14 +17,20 @@ export default function Destinaationcard(props) {
 
 
  <div class="card">
-            <img src={props.img} alt=""/>
-           <div className='data'>
-            <h1>{props.name}</h1>
-            <p>{props.days}</p>
-            <p>{props.amount}</p>
-            </div> 
+            <img src={props.img} alt="" />
+           
+              <h1>{props.name}</h1>
+              <h3>{props.days}</h3>
+              <h4>{props.amount}</h4>
+            
             <button>book Now</button>
-        </div></>
+        </div>
+        
+        
+        
+        
+        
+        </>
       
    
     

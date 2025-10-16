@@ -2,19 +2,32 @@
     margin: 0px;
     padding: 0px;
      font-family: Arial, sans-serif;
+     font-size: 20px;
 }
 
 .head{
-    padding: 25px;
+    padding: 10px;
     color: rgb(206, 128, 19);
-    background-color: rgba(0, 0, 0, 0.478);
+    background-color: rgba(4, 121, 216, 0.856);
     text-align: center;
 }
 .head a{
-    text-decoration: none;
-    padding-left: 100px;
+       padding-left: 100px;
     padding-right: 50px;
     font-size: 20px;
     color: rgba(255, 255, 255, 0.989);
      cursor: pointer;
+   
+}
+button{
+    border-radius: 6px;
+    border: lightblue;
+    height: 40px;
+    width: 89px;
+    margin-top: 10px;
+    color: rgb(13, 164, 228);
+}
+button:hover{
+    color: white;
+    background-color: rgb(14, 188, 214);
 }

@@ -1,8 +1,8 @@
 import React from 'react'
-
+import './contact.css'
 export default function Contact() {
   return (
-    <div>
+    <div className='con'>
        <h2>contact</h2>
           <p>helpline: 1234567890</p>
           
