@@ -8,13 +8,16 @@
 .home1 h1{
     padding-left: 550px;
     padding-top: 150px;
-    color: rgba(50, 66, 174, 0.733);
+     color: rgba(50, 66, 174, 0.733); 
+    
+   
 }
 .home1 p{
     padding-left: 400px;
     padding-top: 25px;
     font-size: 26px;
-    color: rgba(46, 75, 208, 0.664);
+     color: rgba(46, 75, 208, 0.664); 
+    
 }
 *{
     margin: 0px;

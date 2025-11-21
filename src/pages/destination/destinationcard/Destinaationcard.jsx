@@ -1,20 +1,11 @@
 import React from 'react'
 
-
-
-
-
 export default function Destinaationcard(props) {
    
         
-    
-
-
+  
   return (
 <>
-
-
-
 
  <div class="card">
             <img src={props.img} alt="" />

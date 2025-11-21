@@ -13,23 +13,15 @@ export default function App() {
       <Router>
         <Header/>
         
-        
-        
-        <Routes>
-          <Route path="/" element={<Home />}/>
-          <Route path="/login" element={<Login />}/>
-          <Route path="/contact" element={<Contact />}/>
-          <Route path="/destination" element={<Destination />}/>
-          <Route path="/about" element={<About />}/>
-          <Route path="/booking" element={<Booking />}/>  
-        </Routes>
-
-
-
+          <Routes>
+             <Route path="/" element={<Home />}/>
+             <Route path="/login" element={<Login />}/>
+             <Route path="/contact" element={<Contact />}/>
+             <Route path="/destination" element={<Destination />}/>
+             <Route path="/about" element={<About />}/>
+             <Route path="/booking" element={<Booking />}/>  
+          </Routes>
       </Router>
-        
-        
-        
     </div>
   )
 }
