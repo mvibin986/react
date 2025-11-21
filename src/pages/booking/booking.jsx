@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import './booking.css';
+import {Link} from "react-router-dom"
 
 export default function Booking() {
 
   const [form, setForm] = useState({
     name: "",
     people: "",
-    desc: "",
-    date: "",
-    place: "",
+    place: ""
   });
 
   function handleChange(e) {
@@ -19,10 +18,10 @@ export default function Booking() {
   }
 
   function handlebook() {
-    const { name, people, desc, date, place } = form;
+    const { name, people, place } = form;
 
-    if (!name || !people || !desc || !date || !place) {
-      alert("Please fill all the fields!");
+    if (!name || !people || !place) {
+      alert("Enter the fields!");
       return;
     }
 
@@ -44,20 +43,18 @@ export default function Booking() {
 
       <input
         className='bt'
-        type="text"
-        placeholder='Number of adults and children'
+        type="number"
+        placeholder='Number of people'
         name="people"
         value={form.people}
         onChange={handleChange}
       />
 
+      
       <input
         className='bt'
         type="text"
         placeholder='Description'
-        name="desc"
-        value={form.desc}
-        onChange={handleChange}
       />
 
       <h1 className='h1'>From - To date</h1>
@@ -66,13 +63,11 @@ export default function Booking() {
         className='bt'
         type="text"
         placeholder='DD-MM-YY to DD-MM-YY'
-        name="date"
-        value={form.date}
-        onChange={handleChange}
       />
 
       <h1 className='h1'>Select Place</h1>
       <div>
+   
         <select
           name="place"
           value={form.place}
@@ -88,7 +83,13 @@ export default function Booking() {
         </select>
       </div>
 
-      <button className='bn' onClick={handlebook}>Book Now</button>
+     <div className="btn-group">
+  <button className="bn" onClick={handlebook}>Book</button>
+  <Link to="/home">
+    <button>Home</button>
+  </Link>
+</div>
+
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from "react-router-dom"
 export default function Destinaationcard(props) {
    
         
@@ -14,12 +14,14 @@ export default function Destinaationcard(props) {
               <h3>{props.days}</h3>
               <h4>{props.amount}</h4>
             
-            <button>book Now</button>
+            
+            <Link to="/booking"><button>Book Now</button></Link>
         </div>
         
         
         
         
+
         
         </>
       

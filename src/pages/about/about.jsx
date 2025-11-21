@@ -1,5 +1,6 @@
 import React from 'react'
 import './about.css'
+import {Link} from "react-router-dom"
 export default function About() {
   return (
     <div className='abt'>
@@ -8,6 +9,11 @@ export default function About() {
 We showcase handpicked destinations, highlighting hidden gems and well-loved landmarks alike, offering you insights into local traditions, cuisine, and must-see attractions.</p>
     <p>Our page also serves as a resource for practical travel planning—covering everything from visa requirements and packing guides to transportation options and safety advice. Whether you’re a first-time traveler or a seasoned explorer, you’ll find curated content to match your needs and elevate your travel experience.</p>
     <p>More than just a guide, this is a community for travelers who want to experience the world authentically. By combining professional insights with real traveler stories, we create a space that encourages exploration, cultural appreciation, and meaningful connections. Let this page be your trusted companion in turning your travel dreams into reality. </p>
+     <div style={{ display: "flex", justifyContent: "center" }}>
+      <Link to="/home">
+        <button>Home</button>
+      </Link>
+    </div>
     </div>
   )
 }

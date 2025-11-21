@@ -22,3 +22,6 @@ input{
     height: 40px;
     width: 500px;
 }
+img{
+    border-radius: 10px;
+}

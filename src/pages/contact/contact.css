@@ -14,3 +14,6 @@ a{
 .con{
     margin: 10px;
 }
+.center{
+    justify-content: center;
+}

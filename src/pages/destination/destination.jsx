@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-
+import {Link} from "react-router-dom"
 
 import Destinaationcard  from './destinationcard/Destinaationcard'
 import bali from "../../image/bali.jpg"
@@ -35,11 +35,12 @@ const filterdDatas=datas.filter(
        placeholder='🔍 search by name'
        value={search}
        onChange={(data)=>setSearch(data.target.value)} />
+       <Link to="/home"><button>Home</button></Link>
       
         <div className="container">
-             {filterdDatas.map((data)=>(
+             {filterdDatas.map((data, index)=>(
             <Destinaationcard
-              
+               key={index}  
               img={data.img}
               name={data.name}
               days={data.days}
@@ -47,6 +48,7 @@ const filterdDatas=datas.filter(
             />
             
             ))}
+            
         </div>  
     </div>
   )

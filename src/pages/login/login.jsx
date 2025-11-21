@@ -14,7 +14,7 @@ export default function Login() {
       alert("Fill the field");
     } else {
       alert("Login success");
-      navigate("/booking"); 
+      navigate("/home"); 
     }
   }
 

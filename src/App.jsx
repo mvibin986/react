@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Header from './Header.jsx'
+// import Header from './Header.jsx'
 import Home from './pages/home/Home.jsx'
 import Login from './pages/login/login.jsx'
 import Contact from './pages/contact/contact.jsx'
@@ -11,11 +11,11 @@ export default function App() {
   return (
     <div>
       <Router>
-        <Header/>
+        {/* <Header/> */}
         
           <Routes>
-             <Route path="/" element={<Home />}/>
-             <Route path="/login" element={<Login />}/>
+             <Route path="/home" element={<Home />}/>
+             <Route path="/" element={<Login />}/>
              <Route path="/contact" element={<Contact />}/>
              <Route path="/destination" element={<Destination />}/>
              <Route path="/about" element={<About />}/>
