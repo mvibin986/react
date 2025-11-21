@@ -19,7 +19,7 @@ export default function App() {
              <Route path="/contact" element={<Contact />}/>
              <Route path="/destination" element={<Destination />}/>
              <Route path="/about" element={<About />}/>
-             <Route path="/booking" element={<Booking />}/>  
+             <Route path="/booking" element={<Booking />}/>
           </Routes>
       </Router>
     </div>
