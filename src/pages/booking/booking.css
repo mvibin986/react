@@ -37,3 +37,11 @@ select{
   gap: 10px;
   margin-top: 20px;  
 }
+h2{
+    margin-left: 700px;
+}
+.box{
+    background-image: url(https://plus.unsplash.com/premium_photo-1663076518116-0f0637626edf?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Ym9va2luZ3xlbnwwfHwwfHx8MA%3D%3D);
+    padding-top: 10px;
+    padding-bottom: 16px;
+}

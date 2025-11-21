@@ -13,10 +13,17 @@
 .logbt{
     margin-left: 700px;
 }
-.login{
-    margin-top: 100px;
-}
-h2{
+
+.h2{
     font-size: 30px;
     margin-left: 700px;
+    color: aliceblue;
+    
+}
+.back{
+    background-image: url(https://wallpapers.com/images/hd/mystical-1920-x-1080-background-jjh6ixwp2xbwv9jk.jpg);
+    height: 100vh;
+}
+.login{
+    padding-top: 100px;
 }

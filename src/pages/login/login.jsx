@@ -19,9 +19,11 @@ export default function Login() {
   }
 
   return (
-    <>
+    <> 
+    <div className='back'> 
+      
       <div className='login'>
-        <h2>Login</h2>
+        <h2 className='h2'>Login</h2>
 
         <div className='input'><input type="text" placeholder="username" /></div>
         <div className='input'><input type="email" placeholder="E-mail" onChange={(e) => setEmail(e.target.value)} /></div>
@@ -30,6 +32,9 @@ export default function Login() {
         <button className='logbt' onClick={handlelogin}>login</button>
 
       </div>
+      
+    </div>
+     
     </>
   )
 }

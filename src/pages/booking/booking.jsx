@@ -29,7 +29,7 @@ export default function Booking() {
   }
 
   return (
-    <div className='table'>
+   <> <div className='box'><div className='table'>
       <h2>Booking</h2>
 
       <input
@@ -90,6 +90,7 @@ export default function Booking() {
   </Link>
 </div>
 
-    </div>
+    </div></div>
+   </> 
   );
 }

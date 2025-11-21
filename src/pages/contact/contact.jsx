@@ -3,7 +3,8 @@ import './contact.css'
 import {Link} from "react-router-dom"
 export default function Contact() {
   return (
-    <div className='con'>
+    <>
+    <div className='tact'><div className='con'>
      
        <h2>contact</h2>
           <p>helpline: 1234567890</p>
@@ -19,6 +20,8 @@ export default function Contact() {
     <button>Home</button>
   </Link>
 </div>
-     </div>
+     </div></div>
+    </>
+    
   )
 }

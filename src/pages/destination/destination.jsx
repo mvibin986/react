@@ -30,7 +30,7 @@ const filterdDatas=datas.filter(
 
 
   return (
-    <div>
+    <div className='place'>
         <input type="text"
        placeholder='🔍 search by name'
        value={search}
