@@ -14,3 +14,31 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+
+import React ,{useEffect} from 'react'
+import Header from './Header.jsx'
+import { useAuthStore } from '../login/authStore.js'
+import  './Home.css'
+export default function Home() {
+  const user = useAuthStore((state) => state.user);
+  
+
+
+  return (
+    
+      <>
+        <Header/>
+      
+      <div className='home' >
+        <div className='home1'>
+          <h1>hi! {user?.name}</h1>
+          <h1>Welcome to Dream travelers </h1>
+    <p>Discover beautiful places and book your next adventure today</p>
+        </div>
+    </div>
+    </>
+      
+  )
+}

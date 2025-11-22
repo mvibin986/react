@@ -22,15 +22,25 @@ const login = useAuthStore((state) => state.login);
                   navigate("/home")
                  }
               } 
-  return ( 
+return ( 
   <> 
   <div className='back'> 
        <div className='login'> 
         <h2 className='h2'>Login</h2> 
-        <div className='input'><input type="text" placeholder="username" onChange={(e)=> setUsername(e.target.value)}/></div> 
-       <div className='input'><input type="email" placeholder="E-mail" onChange={(e) => setEmail(e.target.value)} />
-  </div> <div className='input'><input type="password" placeholder="password" onChange={(e) => setPassword(e.target.value)} />
-  </div> <button className='logbt' onClick={handlelogin}>login</button> </div> 
+
+        <div className='input'>
+          <input type="text" placeholder="username" onChange={(e)=> setUsername(e.target.value)}/>
+        </div> 
+
+       <div className='input'>
+        <input type="email" placeholder="E-mail" onChange={(e) => setEmail(e.target.value)} />
+       </div> 
+       
+       <div className='input'>
+        <input type="password" placeholder="password" onChange={(e) => setPassword(e.target.value)} />
+       </div> 
+
+        <button className='logbt' onClick={handlelogin}>login</button> </div> 
   </div> 
   </> 
   ) 
