@@ -7,7 +7,7 @@ export default function Home() {
         <Header/>
       
       <div className='home' >
-        <div className='home1'><h1>Welcome to Dream travelers</h1>
+        <div className='home1'><h1>Welcome to Dream travelers </h1>
     <p>Discover beautiful places and book your next adventure today</p>
         </div>
     </div>
