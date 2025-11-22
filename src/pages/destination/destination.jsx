@@ -7,6 +7,7 @@ import viet from "../../image/veit.jpg"
 import goa from "../../image/goa.jpg" 
 import swi from "../../image/swi.jpg" 
 import tok from "../../image/tok.jpg" 
+import Header from '../home/Header'
 import './destination.css' 
 export default function Destination() { 
   const [search, setSearch]=useState("") 
@@ -20,11 +21,12 @@ export default function Destination() {
      const filterdDatas=datas.filter( (data)=>data.name.toLowerCase().includes(search.toLowerCase().trim()) ) 
      return (
        <>
+       <Header/>
        <div > 
         
         <input type="text" placeholder='search by name' value={search} onChange={(data)=>setSearch(data.target.value)} />
         
-        <Link to="/home"><button>Home</button></Link> <div className="container"> 
+        <div className="container"> 
           {filterdDatas.map((data, index)=>( 
             <Destinaationcard 
             key={index} 

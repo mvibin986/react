@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import './booking.css';
-import {Link} from "react-router-dom"
+import Header from '../home/Header'
+import { useNavigate } from "react-router-dom"
 
 export default function Booking() {
 
+  const navigate = useNavigate()
   const [form, setForm] = useState({
     name: "",
     people: "",
@@ -24,12 +26,14 @@ export default function Booking() {
       alert("Enter the fields!");
       return;
     }
-
+     navigate('/home')
     alert("Your trip booked!");
   }
 
   return (
-   <> <div className='box'><div className='table'>
+   <> 
+   <Header/>
+   <div className='box'><div className='table'>
       <h2>Booking</h2>
 
       <input
@@ -84,10 +88,9 @@ export default function Booking() {
       </div>
 
      <div className="btn-group">
+      
   <button className="bn" onClick={handlebook}>Book</button>
-  <Link to="/home">
-    <button>Home</button>
-  </Link>
+
 </div>
 
     </div></div>

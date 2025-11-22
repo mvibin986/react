@@ -1,26 +1,27 @@
 import React, { useState } from 'react' 
-import { useAuthStore } from './authStore';
-import { useNavigate } from "react-router-dom"; 
+import { useAuthStore } from './authStore'
+import { useNavigate } from "react-router-dom"
 import './login.css' 
 
 export default function Login() { 
   
-  const [username, setUsername] = useState("");
-  const [email, setEmail] = useState(""); 
-  const [password, setPassword] = useState(""); 
-  const navigate = useNavigate(); 
+  const [username, setUsername] = useState("")
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+  const navigate = useNavigate()
 
 const login = useAuthStore((state) => state.login);
 
   function handlelogin() 
-               {
+              {
                  if (!username || !email || !password) { 
                 alert("Fill the field"); }
                  else {
-                  login(username);
-                  alert("Login success"); 
-                  navigate("/home"); }
-                 } 
+                  login(username)
+                  alert("Login success")
+                  navigate("/home")
+                 }
+              } 
   return ( 
   <> 
   <div className='back'> 

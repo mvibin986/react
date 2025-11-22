@@ -1,9 +1,12 @@
 import React from 'react'
 import './contact.css'
 import {Link} from "react-router-dom"
+import Header from '../home/Header'
+
 export default function Contact() {
   return (
     <>
+    <Header/>
     <div className='tact'><div className='con'>
      
        <h2>contact</h2>
@@ -16,9 +19,6 @@ export default function Contact() {
            
           <p>E-mail: <a href="">sample@gmail.com</a></p>
      <div style={{ display: "flex", justifyContent: "center" }}>
-  <Link to="/home">
-    <button>Home</button>
-  </Link>
 </div>
      </div></div>
     </>
