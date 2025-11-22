@@ -11,4 +11,5 @@ export default function Destinaationcard(props) {
          
          <Link to="/booking"><button>Book Now</button></Link> </div> 
          </> 
-         ) }
+)        
+}

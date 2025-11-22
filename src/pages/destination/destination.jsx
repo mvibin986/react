@@ -19,7 +19,11 @@ export default function Destination() {
      
      const filterdDatas=datas.filter( (data)=>data.name.toLowerCase().includes(search.toLowerCase().trim()) ) 
      return (
-       <div className='place'> <input type="text" placeholder='🔍 search by name' value={search} onChange={(data)=>setSearch(data.target.value)} />
+       <>
+       <div > 
+        
+        <input type="text" placeholder='search by name' value={search} onChange={(data)=>setSearch(data.target.value)} />
+        
         <Link to="/home"><button>Home</button></Link> <div className="container"> 
           {filterdDatas.map((data, index)=>( 
             <Destinaationcard 
@@ -30,4 +34,5 @@ export default function Destination() {
              amount={data.amount} /> 
             ))} </div> 
             </div>
+       </>
              ) }
